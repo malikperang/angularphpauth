@@ -1,0 +1,31 @@
+
+<div class="row">
+	<div class="span12">
+<form ng-controller="RegCtrl" class="form-signin">
+	<h1 align="center">{{ message }}</h1>
+		<div class="control-group">
+		<label class="control-label">Name</label>
+		 <div class="controls">
+		<input placeholder="Your Awesome Name" type="text" ng-model="user.name"/>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Email</label>
+		 <div class="controls">
+		<input placeholder="Your Awesome Email" type="text" ng-model="user.email"/>
+	</div>
+</div>
+<div class="control-group">
+<label class="control-label">Password</label>
+			 <div class="controls">
+		<input placeholder="Your Secure Password" type="text" ng-model="user.pass" />
+		<p class="help-block">Have an account? <a ng-href="#login">Login Now !</a></p>
+	</div>
+</div>
+		<br /><br />
+		<button ng-click="userReg()" class="btn btn-success btn-large"> Sign Up</button>
+
+      <h1>{{ alert }}</h1>
+	</form>
+</div>
+</div>
+

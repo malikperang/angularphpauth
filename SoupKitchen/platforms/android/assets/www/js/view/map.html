@@ -1,0 +1,43 @@
+<div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                           Track Me
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text">
+                            Save Location
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-users fa-2x"></i>
+                        <span class="nav-text">
+                            User Track Admin Location
+                        </span>
+                    </a>
+                    
+                </li>
+               
+        </nav>
+
+<div ng-controller="mapCtrl">
+    <div id="map"></div>
+    <p id="geolocation">Get Geolocation..</p>
+    <p>Your latitude is {{ lat }}</p>
+    <p>Your longitude is {{ lng }}</p>
+     <button ng-click="trackMe()">Track Me</button>
+    <button ng-click="submitGeo()">Save location</button>
+    <button ng-click="getCurGeo()">User Track Admin Location</button>
+    <p>Admin latitude : {{ curLat }}</p>
+    <p>Admin Longitude : {{ curLng }}</p>
+</div>
