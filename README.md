@@ -1,7 +1,7 @@
-angularphpauth
-==============
+Angular PHP Tutorial
+============================
 
-Just another exercise to AngularJs.
+Just another exercise for AngularJs.
 
 Credit to Amine Elgali for this awesome tutorial:
 
